@@ -5,6 +5,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Appbar() {
   return (
@@ -23,6 +25,9 @@ export default function Appbar() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Simple React+Sprintboot CRUD Application
           </Typography>
+          <Button color="inherit" component={Link} to="/get-students">
+            Students
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>
