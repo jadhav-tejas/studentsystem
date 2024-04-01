@@ -28,6 +28,9 @@ export default function Appbar() {
           <Button color="inherit" component={Link} to="/get-students">
             Students
           </Button>
+          <Button color="inherit" component={Link} to="/">
+            Home
+          </Button>
         </Toolbar>
       </AppBar>
     </Box>
